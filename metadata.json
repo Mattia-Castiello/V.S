@@ -1,0 +1,7 @@
+{
+  "name": "Vinted Intelligence",
+  "description": "Automated price intelligence dashboard for Vinted resellers. Monitor listings, compare with Amazon prices, and find high-margin opportunities.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

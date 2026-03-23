@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-primary: #141414;
+  --color-accent: #84cc16; /* Lime green from the image */
+  --color-accent-orange: #f97316;
+  --color-bg-subtle: #f8f9fa;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-subtle text-primary font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white border border-black/5 shadow-sm rounded-2xl;
+}
+
+.sidebar-item {
+  @apply flex items-center gap-3 px-4 py-2.5 rounded-xl transition-all duration-200 text-sm font-medium;
+}
+
+.sidebar-item-active {
+  @apply bg-white shadow-sm text-primary;
+}
+
+.sidebar-item-inactive {
+  @apply text-gray-500 hover:bg-black/5 hover:text-primary;
+}
+
