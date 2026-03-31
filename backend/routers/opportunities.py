@@ -30,6 +30,9 @@ async def get_opportunities() -> list[dict]:
     opportunities = []
     for row in result.data or []:
         listing = row.get("listings") or {}
+        # Skip opportunities whose listing has no active watchlist item
+        if not listing.get("watchlist_item_id"):
+            continue
         photos = listing.get("photos") or []
 
         # Parse condition_breakdown from JSON string if needed

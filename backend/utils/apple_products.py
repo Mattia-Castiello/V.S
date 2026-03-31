@@ -7,7 +7,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPhone 16 Pro Max",
         "search_terms": ["iPhone 16 Pro Max"],
-        "category_id": 2405,
+        "category_id": None,
         "brand_id": None,
         "min_price": 500,
         "max_price": 1500,
@@ -16,7 +16,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPhone 16 Pro",
         "search_terms": ["iPhone 16 Pro"],
-        "category_id": 2405,
+        "category_id": None,
         "brand_id": None,
         "min_price": 400,
         "max_price": 1400,
@@ -25,7 +25,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPhone 16",
         "search_terms": ["iPhone 16"],
-        "category_id": 2405,
+        "category_id": None,
         "brand_id": None,
         "min_price": 300,
         "max_price": 1100,
@@ -34,7 +34,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPhone 15 Pro Max",
         "search_terms": ["iPhone 15 Pro Max"],
-        "category_id": 2405,
+        "category_id": None,
         "brand_id": None,
         "min_price": 400,
         "max_price": 1300,
@@ -43,7 +43,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPhone 15 Pro",
         "search_terms": ["iPhone 15 Pro"],
-        "category_id": 2405,
+        "category_id": None,
         "brand_id": None,
         "min_price": 350,
         "max_price": 1200,
@@ -52,7 +52,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPhone 15",
         "search_terms": ["iPhone 15"],
-        "category_id": 2405,
+        "category_id": None,
         "brand_id": None,
         "min_price": 250,
         "max_price": 900,
@@ -61,7 +61,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPhone 14 Pro Max",
         "search_terms": ["iPhone 14 Pro Max"],
-        "category_id": 2405,
+        "category_id": None,
         "brand_id": None,
         "min_price": 300,
         "max_price": 1000,
@@ -70,7 +70,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPhone 14 Pro",
         "search_terms": ["iPhone 14 Pro"],
-        "category_id": 2405,
+        "category_id": None,
         "brand_id": None,
         "min_price": 250,
         "max_price": 900,
@@ -79,7 +79,7 @@ APPLE_PRODUCTS = [
     {
         "name": "MacBook Pro 14",
         "search_terms": ["MacBook Pro 14"],
-        "category_id": 1884,
+        "category_id": None,
         "brand_id": None,
         "min_price": 600,
         "max_price": 3000,
@@ -88,7 +88,7 @@ APPLE_PRODUCTS = [
     {
         "name": "MacBook Pro 16",
         "search_terms": ["MacBook Pro 16"],
-        "category_id": 1884,
+        "category_id": None,
         "brand_id": None,
         "min_price": 800,
         "max_price": 4000,
@@ -97,7 +97,7 @@ APPLE_PRODUCTS = [
     {
         "name": "MacBook Air M2",
         "search_terms": ["MacBook Air M2"],
-        "category_id": 1884,
+        "category_id": None,
         "brand_id": None,
         "min_price": 400,
         "max_price": 1500,
@@ -106,7 +106,7 @@ APPLE_PRODUCTS = [
     {
         "name": "MacBook Air M3",
         "search_terms": ["MacBook Air M3"],
-        "category_id": 1884,
+        "category_id": None,
         "brand_id": None,
         "min_price": 500,
         "max_price": 1800,
@@ -115,7 +115,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPad Pro M4",
         "search_terms": ["iPad Pro M4"],
-        "category_id": 1886,
+        "category_id": None,
         "brand_id": None,
         "min_price": 400,
         "max_price": 2000,
@@ -124,7 +124,7 @@ APPLE_PRODUCTS = [
     {
         "name": "iPad Air M2",
         "search_terms": ["iPad Air M2"],
-        "category_id": 1886,
+        "category_id": None,
         "brand_id": None,
         "min_price": 300,
         "max_price": 1000,
@@ -133,7 +133,7 @@ APPLE_PRODUCTS = [
     {
         "name": "Apple Watch Ultra 2",
         "search_terms": ["Apple Watch Ultra 2"],
-        "category_id": 2387,
+        "category_id": None,
         "brand_id": None,
         "min_price": 300,
         "max_price": 900,
@@ -142,7 +142,7 @@ APPLE_PRODUCTS = [
     {
         "name": "Apple Watch Series 9",
         "search_terms": ["Apple Watch Series 9"],
-        "category_id": 2387,
+        "category_id": None,
         "brand_id": None,
         "min_price": 150,
         "max_price": 600,
@@ -151,7 +151,7 @@ APPLE_PRODUCTS = [
     {
         "name": "AirPods Pro 2",
         "search_terms": ["AirPods Pro 2", "AirPods Pro"],
-        "category_id": 2403,
+        "category_id": None,
         "brand_id": None,
         "min_price": 50,
         "max_price": 300,
@@ -160,7 +160,7 @@ APPLE_PRODUCTS = [
     {
         "name": "AirPods Max",
         "search_terms": ["AirPods Max"],
-        "category_id": 2403,
+        "category_id": None,
         "brand_id": None,
         "min_price": 150,
         "max_price": 600,

@@ -219,6 +219,7 @@ async def scrape_watchlist_items(
 
             for search_term in config.get("search_terms", [query]):
                 try:
+                    has_id_filters = bool(brand_ids or catalog_ids)
                     listings = await scrape_catalog(
                         session=session,
                         search_text=search_term,
@@ -232,6 +233,25 @@ async def scrape_watchlist_items(
                         max_price=wl_item.get("max_price"),
                         sort_order=wl_sort_order,
                     )
+
+                    # Fallback: if brand/catalog filters returned 0 results,
+                    # retry without them (Vinted IDs are often broken)
+                    if not listings and has_id_filters:
+                        logger.warning(
+                            f"0 results for '{search_term}' with brand/catalog "
+                            f"filters, retrying without filters"
+                        )
+                        listings = await scrape_catalog(
+                            session=session,
+                            search_text=search_term,
+                            size_ids=wl_size_ids or None,
+                            color_ids=wl_color_ids or None,
+                            material_ids=wl_material_ids or None,
+                            status_ids=wl_status_ids or None,
+                            min_price=wl_min_price,
+                            max_price=wl_item.get("max_price"),
+                            sort_order=wl_sort_order,
+                        )
 
                     # Filter out irrelevant results
                     relevant = _filter_relevant(listings, search_term, query)
