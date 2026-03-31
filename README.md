@@ -69,6 +69,20 @@ backend/migrations/005_opportunities_unique_listing.sql
 
 ### 3. Frontend
 
+Assicurati di avere Node.js 18+ installato. Se `npm` non è disponibile, installalo con:
+
+```bash
+# Con nvm (raccomandato)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.zshrc
+nvm install --lts
+
+# Oppure con Homebrew
+brew install node
+```
+
+Poi installa le dipendenze:
+
 ```bash
 npm install
 ```

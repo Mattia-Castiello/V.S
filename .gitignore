@@ -1,8 +1,40 @@
+# Dependencies
 node_modules/
+package-lock.json
+
+# Build output
 build/
 dist/
-coverage/
-.DS_Store
-*.log
-.env*
+
+# Python virtual environment
+.vinted/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment variables
+.env
+.env.*
 !.env.example
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Coverage
+coverage/
