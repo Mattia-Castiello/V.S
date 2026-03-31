@@ -69,8 +69,12 @@ async def run_full_scan():
             logger.warning(f"Scan found 0 listings across {len(items)} watchlist items")
 
         # 4. Cluster products (Ollama + regex fallback)
-        cluster_map = await cluster_products(all_listings)
-        logger.info(f"Clustered listings into {len(set(cluster_map.values()))} groups")
+        try:
+            cluster_map = await cluster_products(all_listings)
+            logger.info(f"Clustered listings into {len(set(cluster_map.values()))} groups")
+        except Exception as e:
+            logger.warning(f"Clustering failed, proceeding without cluster stats: {e}")
+            cluster_map = {}
 
         # 5. Calculate price stats for each unique cluster
         cluster_stats: dict[str, dict] = {}
@@ -154,7 +158,11 @@ async def run_single_item_scan(watchlist_item: dict):
             )
 
         # Cluster + stats + score
-        cluster_map = await cluster_products(listings)
+        try:
+            cluster_map = await cluster_products(listings)
+        except Exception as e:
+            logger.warning(f"Clustering failed for single item scan, proceeding without cluster stats: {e}")
+            cluster_map = {}
         cluster_stats: dict[str, dict] = {}
         for cluster_id in set(cluster_map.values()):
             try:
